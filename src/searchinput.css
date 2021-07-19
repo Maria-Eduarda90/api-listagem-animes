@@ -1,0 +1,15 @@
+.search {
+    border-radius: .90rem;
+    padding: 1rem;
+    width: 30%;
+    border: solid 1px blue;
+    outline: none;
+    resize: none;
+    background-image: url('./assets/icon-pesquisa.svg');
+    background-repeat: no-repeat;
+    background-position: 96%;
+}
+
+input::placeholder {
+    color: rgba(81, 81, 238, 0.466);
+}

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    background: linear-gradient(329.54deg, #000000 0%, rgb(74, 5, 114) 50%, rgb(81, 105, 209) 100%);
+    height: 65rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.App header span {
+    color: rgb(120, 140, 253);
+}
+
+.App h1 {
+    font-family: Zen Tokyo Zoo;
+}
+
+.App .container-header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.App .container-header .loader {
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #f91291;
+    height: 100px;
+    width: 100px;
+}
+
+.animes-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    list-style: none;
+    grid-gap: 1.5rem;
+}
+
+.animes-list img {
+    max-width: 100%;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.animes-list .img-container {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .2s ease;
+}
+
+.animes-list .img-container:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.animes-list p {
+    font-family: Gloria Halleulujah;
+    color: #FFF;
+    transition: .3s;
+    margin-top: 1rem;
+}
+
+.animes-list p:hover {
+    color:rgb(103, 75, 136);
+    cursor: pointer;
+}
+
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@media(max-width: 1200px) {
+    .App {
+        background: white;
+    }
+
+    .animes-list p {
+        color: #000;
+    }
+}
+
+@media(max-width: 1360px){
+    .App {
+        background: white;
+    }
+
+    .animes-list p {
+        color: #000;
+    }
+}
