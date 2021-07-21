@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import qs from 'qs';
 
 import SearchInput from './parts/Searchinput';
-import Pagination from './Pagination';
+import Pagination from './parts/Pagination';
 import './styles/global.css';
 
 const api = 'https://kitsu.io/api/edge/';

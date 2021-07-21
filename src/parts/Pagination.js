@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/pagination.css'
+import '../styles/pagination.css'
 
 const maxItems = 9;
 const maxLeft = (maxItems - 1) / 2;
