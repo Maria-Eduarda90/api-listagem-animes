@@ -44,7 +44,7 @@ export default function App() {
           <SearchInput value={text} onChange={(search) => setText(search)}/>
         </header>
         <section className="container-header">
-          {text && !info.data && (
+          {!info.meta && (
             <div>
               <div className="loader"></div>
             </div>
