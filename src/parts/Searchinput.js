@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import useDebounce from '../useDebounced';
-import '../searchinput.css';
-{/**/}
+import '../styles/searchinput.css';
+
 const SearchInput = ({ value, onChange }) => {
     const [ displayValue, setDisplayValue ] = useState(value);
     const debouncedChange = useDebounce(onChange, 500);
