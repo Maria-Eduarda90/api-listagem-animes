@@ -65,17 +65,17 @@ body::-webkit-scrollbar-thumb {
     
 }
 
-.animes-list .img-container {
+/*.animes-list .img-container {
     width: 100%;
     height: 100%;
     -webkit-transition: -webkit-transform .5s ease;
     transition: transform .2s ease;
-}
+}*/
 
-.animes-list .img-container:hover img {
+/*.animes-list .img-container:hover img {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
+}*/
 
 .animes-list p {
     font-family: Gloria Halleulujah;

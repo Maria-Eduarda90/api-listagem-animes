@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import qs from 'qs';
+import Zoom from 'react-reveal/Zoom';
 
 import SearchInput from './parts/Searchinput';
 import Pagination from './parts/Pagination';
@@ -54,9 +55,9 @@ export default function App() {
             <ul className="animes-list">
               {info.data.map((anime) => (
                 <li key={anime.id}>
-                  <a className="img-container">
+                  <Zoom className="img-container">
                     <img src={anime.attributes.posterImage.small} alt={anime.attributes.canonicalTitle}/>
-                  </a>
+                  </Zoom>
                   <p>{anime.attributes.canonicalTitle}</p>
                 </li>
               ))}
